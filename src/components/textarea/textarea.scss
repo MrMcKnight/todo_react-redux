@@ -1,0 +1,17 @@
+.textarea
+{
+    $root:&;
+    width: 100%;
+    padding: 20px 20px 20px;
+    box-sizing: border-box;
+    resize: none;
+    border: 2px solid #E6E6E6;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    &-error
+    {
+        box-shadow: 0 0 10px rgba(230, 67, 67, .8);
+    }
+
+}

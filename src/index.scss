@@ -1,0 +1,21 @@
+/* Подключение шрифтов */
+@import url(./fonts/fonts.css);
+
+.wrap
+{
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    font-family: Gilroy;
+    padding: 0 40px;
+    height: 97vh;
+    
+
+}
+
+.button-create
+{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}

@@ -1,0 +1,45 @@
+@import '../colors/colors.scss';
+.item
+{
+    $root:&;
+    margin-bottom: 31px;
+
+    &__title
+    {
+        display: flex;
+        align-items: center;
+        user-select:none;
+    }
+    &__label-edit
+    {
+        display:flex
+    }
+    &__label>input 
+    {
+        display: none;
+    }
+    &__label>span::before 
+    {
+        content: '';
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        border: 2px solid $border_color;
+        border-radius: 50%;
+        margin-right: 14px;
+        box-sizing: border-box;
+    }
+    &__label>input:checked+span::before 
+    {
+        background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='6' cy='6' r='6' fill='%2323A3FF'/%3e%3c/svg%3e ") no-repeat center;
+    }
+    &-delete
+    {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-right: 14px;
+        background: #E85C5C url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='2' viewBox='0 0 10 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 1C0 0.447715 0.447715 0 1 0H9C9.55229 0 10 0.447715 10 1C10 1.55228 9.55229 2 9 2H1C0.447715 2 0 1.55228 0 1Z' fill='white'/%3e%3c/svg%3e ") no-repeat center ;
+        border-radius: 50%;
+    }
+}
